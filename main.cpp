@@ -1,29 +1,29 @@
 #include "raylib.h"
 #include <stdio.h>
 
+#define WIDTH 800
+#define HEIGHT 800
+
+
 int main() {
-  // InitWindow(300, 600, "hello, world");
-  //
-  const int screenWidth = 800;
-  const int screenHeight = 450;
 
-  InitWindow(300,300, "hELLO, WORLD!");
-  printf("Hello,World!");
-
-  SetTargetFPS(60);
+  InitWindow(WIDTH, HEIGHT, "Stephen's Window");
 
   while (!WindowShouldClose()) {
     BeginDrawing();
 
-    ClearBackground(RAYWHITE);
 
-    DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
+    ClearBackground(WHITE);
+
+    DrawCircle(WIDTH/2, HEIGHT/2, 200, PURPLE);
+
+
+
 
     EndDrawing();
   }
 
 
-  CloseWindow();
   return 0;
 }
 
