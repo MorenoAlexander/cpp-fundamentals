@@ -16,7 +16,10 @@ run: main
 debug: main
 	lldb main
 
+dasher:
+	clang++ $(CLFLAGs) -o dasher dasher.cpp -lraylib -lGL -lpthread -ldl -lrt -lX11
 
 clean:
 	rm ./main ./main.o
+	rm ./dasher ./dasher.o
 
