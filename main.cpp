@@ -205,15 +205,14 @@ Game *initGame()
 
 void DrawStats(char *strbuffer, Game *game, AxeArray *axeArray)
 {
-  char *score = (char *)malloc(sizeof(char) * 50);
-  snprintf(score, 50, "Score: %d", game->score);
-  DrawText(score, 10, 10, 20, BLACK);
+  snprintf(strbuffer, 50, "Score: %d", game->score);
+  DrawText(strbuffer, 10, 10, 20, BLACK);
 
-  snprintf(score, 50, "High score: %d", game->highScore);
-  DrawText(score, 10, 40, 20, BLACK);
+  snprintf(strbuffer, 50, "High score: %d", game->highScore);
+  DrawText(strbuffer, 10, 40, 20, BLACK);
 
-  snprintf(score, 50, "Axes: %d", axeArray->size);
-  DrawText(score, 10, 70, 20, BLACK);
+  snprintf(strbuffer, 50, "Axes: %d", axeArray->size);
+  DrawText(strbuffer, 10, 70, 20, BLACK);
 }
 
 int main()
