@@ -1,5 +1,5 @@
 
-CFLAGS= -Wall -Wextra -g 
+CFLAGS= -Wall -Wextra -g
 
 
 

@@ -2,3 +2,7 @@ a.out
 
 main.o
 libraylib.a
+main
+
+
+.vscode/settings.json
